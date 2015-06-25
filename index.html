@@ -4,6 +4,7 @@
     <title>Capture Photo</title>
 
     <script type="text/javascript" charset="utf-8" src="cordova-2.4.0.js"></script>
+    <script src="js/file.js" type="text/javascript"></script>
     <script type="text/javascript" charset="utf-8">
 
     var pictureSource;   // picture source
@@ -117,5 +118,50 @@
     <button onclick="getPhoto(pictureSource.SAVEDPHOTOALBUM);">From Photo Album</button><br>
     <img style="display:none;width:60px;height:60px;" id="smallImage" src="" />
     <img style="display:none;" id="largeImage" src="" />
+    
+    <h1>CONTACT FORM</h1>
+ 
+              <form id="mycontact">
+ 
+                     <fieldset>
+ 
+                           <legend>Your details</legend>
+ 
+                           <ol>
+ 
+                                  <li>
+ 
+                                         <label for="username">Name</label>
+ 
+                                         <input id="username" type="text" placeholder="First and last name" required autofocus pattern=" ">
+ 
+                        <input type="hidden" id="id"/>
+ 
+                                  </li>
+ 
+                                  <li>
+ 
+                                         <label for="useremail">Email</label>
+ 
+                                         <input id="useremail" type="text" placeholder="example@domain.com" required pattern=" ">
+ 
+                                  </li>
+ 
+                           </ol>
+ 
+                     </fieldset>
+ 
+                <button id="btnReset" type=submit>Reset</button>
+ 
+                     <button id="submitButton" type="submit">SAVE</button>
+ 
+                <button id="btnUpdate" type=submit>UPDATE</button>
+ 
+                <button id="btnDrop" type=submit>DROP</button>
+ 
+              </form><br />
+ 
+        <div id="results"></div>
+    
   </body>
 </html>
